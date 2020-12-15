@@ -16,7 +16,9 @@ minecraft {
 
 
 repositories {
+    mavenLocal()
     maven { url = "http://maven.fabricmc.net/" }
+    maven { url = "https://www.cursemaven.com" }
 }
 
 dependencies {
@@ -32,6 +34,8 @@ dependencies {
 
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.
+
+    modImplementation "curse.maven:kubejs-fabric-395864:3102076"
 }
 
 processResources {

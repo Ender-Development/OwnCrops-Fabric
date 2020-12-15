@@ -1,30 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "owncrops",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Own Crops",
+  "description": "TODO",
   "authors": [
-    "Me!"
+    "Ender-Development"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://pixel-friends.com",
+    "sources": "https://github.com/Ender-Development/OwnCrops"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/owncrops/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleModKt::init"
+      {
+        "adapter": "kotlin",
+        "value": "io.klebe.owncrops.OwnCrops"
+      }
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
+  "mixins": [],
   "depends": {
     "fabricloader": ">=0.8.7",
     "fabric": "*",
