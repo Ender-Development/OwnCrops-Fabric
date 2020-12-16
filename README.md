@@ -34,9 +34,10 @@ Our Team currently includes:
 - Curseforge: <https://www.curseforge.com/members/klebe0815/projects>
 - Discord: <https://discord.gg/nva5gGt>
 - GitHub: <https://github.com/Klebestreifen>
+- Twitch: <https://www.twitch.tv/klebe0815>
 - Website: <https://klebe.io/>
 
-## Community ##
+## Community
 
 Ender-Development is part of a Gaming Community called `Pixel-Friends.com`
 
