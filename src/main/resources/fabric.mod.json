@@ -23,6 +23,12 @@
         "adapter": "kotlin",
         "value": "io.klebe.owncrops.OwnCrops"
       }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "io.klebe.owncrops.OwnCropsClient"
+      }
     ]
   },
   "mixins": [],
@@ -30,7 +36,8 @@
     "fabricloader": ">=0.8.7",
     "fabric": "*",
     "fabric-language-kotlin": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.16.x",
+    "kubejs": "*"
   },
   "suggests": {
     "flamingo": "*"
