@@ -2,26 +2,26 @@
 
 /******************************************************************************
  * Here we have prepared a sample script for you.
- * 
+ *
  * As an example we add a seed,
- * which drops when harvesting the plant cobblestone.
- * Secondly, we have added a potato whose plant drops itself when
+ * which drops cobblestone when harvested.
+ * Then we add a potato whose plant drops itself when
  * harvested and is edible.
- * 
- * If something is still unclear, just write us an issue on Github.
+ *
+ * If something is still unclear, just write us an issue on GitHub.
  *****************************************************************************/
 
 // The first thing we do is check if our mod is loaded. You can
 // also leave that out if you want.
-if (mod.isLoaded('owncrops')) {												
+if (mod.isLoaded('owncrops')) {
 
   // This waits for the crop register event.
   // In these, all crops and foods are later described and registered.
   events.listen('owncrops.crop.registry', event => {
 
     // This creates a new item called "dark_seed"
-    // the asset loader looks for "dark_seed.png" in 
-    // "*INSTANCE*/kubejs/assets/owncrops/textures/item/"
+    // the asset loader looks for "dark_seed.png" in
+    // "*INSTANCEFOLDER*/kubejs/assets/owncrops/textures/item/"
     // All things are defined via builders. However, a final command is not
     // necessary. All builders will be executed automatically after the
     // script is finished.
@@ -42,19 +42,19 @@ if (mod.isLoaded('owncrops')) {
         // There could be problems with more than 8 growthstages.
         // This has not been tested yet.
         // The textures are located at
-        // "*INSTANCE*/kubejs/assets/owncrops/textures/block/"
+        // "*INSTANCEFOLDER*/kubejs/assets/owncrops/textures/block/"
 
     // Now our first plant is ready.
 
     // Next we want to add a potato. This consists of only one item.
     // This can be planted as well as eaten.
-    //
+
     // This creates a new item called "dark_potato"
     event.create('dark_potato')
         // This makes "dark_potato" a new crop, which only drops
-        // itself, when harvested. If you do not specify a parameters,
-        // the crop drops itself as the end product.										  
-        .plantable()																		    
+        // itself, when harvested. If you do not specify a parameter,
+        // the crop drops itself as the end product.
+        .plantable()
         // ".edible(<hunger>, <saturation>)" turns "dark_potato" into a
         // food source with 2 hunger regeneration and 3 saturation
         .edible(2,3)
@@ -66,9 +66,10 @@ if (mod.isLoaded('owncrops')) {
         // Now, this allows the fully grown crop to be
         // harvested by right-clicking it.
         // For compatibility reasons, you must specify this separately.
-        // If you omit this, then you have to break down the plant as in vanilla.
+        // If you omit this, then you have to break the plant like in vanilla.
         .harvestOnUse();
-      
-      // Now we can close the function block '}' and the event.listen function ')'.
+
+      // Now we can close the function block with '}' and
+      // the event.listen function with ')'.
   });
 } // close if (mod.isLoaded('owncrops'))
