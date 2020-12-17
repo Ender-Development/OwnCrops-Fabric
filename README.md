@@ -14,6 +14,11 @@ OwnCrops is a Mod for Minecraft made by `Ender-Development`.
 
 It allows Modpacks to add new Crops without the need of making a seperate mod for them. We utilize [KubeJS](https://github.com/KubeJS-Mods/KubeJS) by [LatvianModder](https://github.com/LatvianModder) to make the process of adding new crops for the user even easier.
 
+### Example
+
+[Here](run/kubejs/startup_scripts/script.js) is a working documented example on how to use the mod.
+The shown resources are located [here](run/kubejs/assets/owncrops/textures/).
+
 ## [Ender-Development](https://github.com/Ender-Development)
 
 Our Team currently includes:
