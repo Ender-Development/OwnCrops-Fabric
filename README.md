@@ -4,7 +4,7 @@
 
 [![Gradle build](https://github.com/Ender-Development/OwnCrops-Fabric/workflows/Gradle%20build/badge.svg)](https://github.com/Ender-Development/OwnCrops-Fabric/actions) [![](https://img.shields.io/github/license/Ender-Development/OwnCrops-Fabric.svg)](LICENSE) [![](https://img.shields.io/github/release/Ender-Development/OwnCrops-Fabric.svg)](https://github.com/Ender-Development/OwnCrops-Fabric/releases) ![](http://cf.way2muchnoise.eu/versions/minecraft_owncrops-fabric_all.svg) [![](http://cf.way2muchnoise.eu/owncrops-fabric.svg)](https://minecraft.curseforge.com/projects/owncrops-fabric)
 
-*Customize your Farming Experience* • [Downloads](https://github.com/Ender-Development/OwnCrops-Fabric/releases) • [CurseForge](https://www.curseforge.com/minecraft/mc-mods/owncrops-fabric)
+*Customize your Farming Experience* • [Downloads](https://github.com/Ender-Development/OwnCrops-Fabric/releases) • [CurseForge](https://www.curseforge.com/minecraft/mc-mods/owncrops-fabric) • [Modrinth](https://modrinth.com/mod/owncrops-fabric)
 
 <p>&nbsp;</p>
 
