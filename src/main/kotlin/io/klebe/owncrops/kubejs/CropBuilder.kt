@@ -1,18 +1,9 @@
 package io.klebe.owncrops.kubejs
 
-import com.google.gson.JsonObject
-import dev.latvian.kubejs.block.BlockBuilder
-import dev.latvian.kubejs.util.BuilderBase
 import io.klebe.owncrops.OwnCrops
 import net.minecraft.item.FoodComponent
-import net.minecraft.util.math.Direction
 
-
-class CropBuilder(id: String) : BuilderBase(id) {
-
-    enum class ModelType{
-        X, HASH, CUSTOM
-    }
+class CropBuilder(id: String)  {
 
     data class Edible(
         val amount: Int,
@@ -24,13 +15,16 @@ class CropBuilder(id: String) : BuilderBase(id) {
             .build()
     }
 
-    var growthStage: MutableList<Double> = mutableListOf()
+    val id = OwnCrops.Identifier(id)
+    val growthStage: MutableList<Double> = mutableListOf()
     var plantable: Boolean = false
     var edible: Edible? = null
-    var modelType: ModelType = ModelType.HASH
+    var product = ""
+    var harvestOnUse = false
 
-    fun plantable(): CropBuilder {
+    fun plantable(id: String): CropBuilder {
         plantable = true
+        this.product = id
         return this
     }
 
@@ -48,20 +42,9 @@ class CropBuilder(id: String) : BuilderBase(id) {
         return this
     }
 
-    fun modelX(): CropBuilder {
-        modelType = ModelType.X
+    fun harvestOnUse(): CropBuilder {
+        harvestOnUse = true
         return this
     }
 
-    fun modelHash(): CropBuilder {
-        modelType = ModelType.HASH
-        return this
-    }
-
-    fun customModel(): CropBuilder {
-        modelType = ModelType.CUSTOM
-        return this
-    }
-
-    override fun getType(): String = "crop"
 }
