@@ -28,6 +28,11 @@ class CropBuilder(id: String)  {
         return this
     }
 
+    fun plantable(): CropBuilder {
+        plantable(id.toString())
+        return this
+    }
+
     fun addGrowthStage(height: Double): CropBuilder {
         if(!plantable) {
             OwnCrops.log.warn("Growth stage have been set, but the plant has not yet been marked as plantable. ($id)")
